@@ -1,0 +1,6 @@
+params,best_valid_score,valid_recall@10,valid_mrr@10,valid_ndcg@10,valid_hit@10,valid_precision@10,runtime_s,checkpoint
+"{""k"": 20}",0.3708,0.2125,0.3708,0.2217,0.7359,0.1505,1.3,/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/tune-ItemKNN-user-00/ml-100k-ItemKNN-Oct-13-2026_11-08-03.pth
+"{""k"": 50}",0.401,0.216,0.401,0.2355,0.755,0.1562,1.5,/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/tune-ItemKNN-user-01/ml-100k-ItemKNN-Oct-13-2026_11-08-03.pth
+"{""k"": 100}",0.3992,0.2102,0.3992,0.2345,0.7402,0.1567,1.5,/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/tune-ItemKNN-user-02/ml-100k-ItemKNN-Oct-13-2026_11-08-03.pth
+"{""k"": 200}",0.3874,0.1996,0.3874,0.2241,0.7232,0.1494,1.8,/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/tune-ItemKNN-user-03/ml-100k-ItemKNN-Oct-13-2026_11-08-05.pth
+"{""k"": 400}",0.3671,0.1893,0.3671,0.2099,0.7041,0.1397,2.1,/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/tune-ItemKNN-user-04/ml-100k-ItemKNN-Oct-13-2026_11-08-05.pth

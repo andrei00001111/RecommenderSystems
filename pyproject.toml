@@ -1,0 +1,21 @@
+[project]
+name = "project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "lightgbm>=4.7.0",
+    "matplotlib>=3.9",
+    "nbclient>=0.11.0",
+    "nbformat>=5.11.1",
+    "numpy<2",
+    "pandas<3",
+    "pyyaml>=6.0.3",
+    "ray[tune]>=2.59.0",
+    "recbole>=1.2.0",
+    "scikit-learn>=1.5",
+    "torch>=2.14.1",
+    "xgboost>=3.4.1",
+]

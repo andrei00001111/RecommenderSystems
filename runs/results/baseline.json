@@ -1,0 +1,383 @@
+[
+ {
+  "run_id": "ItemKNN-item",
+  "model_key": "ItemKNN-item",
+  "model": "ItemKNN",
+  "family": "Neighbourhood CF",
+  "params": {
+   "k": 100,
+   "knn_method": "item",
+   "epochs": 5,
+   "eval_step": 1,
+   "stopping_step": 2
+  },
+  "best_valid_score": 0.3779,
+  "best_valid": {
+   "recall@10": 0.2058,
+   "mrr@10": 0.3779,
+   "ndcg@10": 0.2213,
+   "hit@10": 0.7328,
+   "precision@10": 0.1554
+  },
+  "recbole_test": {
+   "recall@10": 0.247,
+   "mrr@10": 0.4623,
+   "ndcg@10": 0.2834,
+   "hit@10": 0.7847,
+   "precision@10": 0.1931
+  },
+  "runtime_s": 5.3,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/ItemKNN-item/ml-100k-ItemKNN-Oct-13-2026_11-03-05.pth"
+ },
+ {
+  "run_id": "ItemKNN-user",
+  "model_key": "ItemKNN-user",
+  "model": "ItemKNN",
+  "family": "Neighbourhood CF",
+  "params": {
+   "k": 100,
+   "knn_method": "user",
+   "epochs": 5,
+   "eval_step": 1,
+   "stopping_step": 2
+  },
+  "best_valid_score": 0.3992,
+  "best_valid": {
+   "recall@10": 0.2102,
+   "mrr@10": 0.3992,
+   "ndcg@10": 0.2345,
+   "hit@10": 0.7402,
+   "precision@10": 0.1567
+  },
+  "recbole_test": {
+   "recall@10": 0.2442,
+   "mrr@10": 0.4834,
+   "ndcg@10": 0.2873,
+   "hit@10": 0.7805,
+   "precision@10": 0.1885
+  },
+  "runtime_s": 5.1,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/ItemKNN-user/ml-100k-ItemKNN-Oct-13-2026_11-03-05.pth"
+ },
+ {
+  "run_id": "BPR",
+  "model_key": "BPR",
+  "model": "BPR",
+  "family": "Matrix factorisation",
+  "params": {
+   "epochs": 20,
+   "train_batch_size": 2048,
+   "learner": "adam",
+   "learning_rate": 0.001,
+   "eval_step": 10,
+   "stopping_step": 20,
+   "embedding_size": 64,
+   "reg_weight": 0.0,
+   "train_neg_sample_args": {
+    "distribution": "uniform",
+    "sample_num": 1,
+    "alpha": 1.0,
+    "dynamic": false,
+    "candidate_num": 0
+   }
+  },
+  "best_valid_score": 0.3474,
+  "best_valid": {
+   "recall@10": 0.181,
+   "mrr@10": 0.3474,
+   "ndcg@10": 0.1994,
+   "hit@10": 0.6808,
+   "precision@10": 0.1382
+  },
+  "recbole_test": {
+   "recall@10": 0.2085,
+   "mrr@10": 0.4304,
+   "ndcg@10": 0.2494,
+   "hit@10": 0.7275,
+   "precision@10": 0.167
+  },
+  "runtime_s": 7.0,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/BPR/ml-100k-BPR-Oct-13-2026_11-03-04.pth"
+ },
+ {
+  "run_id": "FISM",
+  "model_key": "FISM",
+  "model": "FISM",
+  "family": "Item-item (latent)",
+  "params": {
+   "epochs": 10,
+   "train_batch_size": 2048,
+   "learner": "adam",
+   "learning_rate": 0.001,
+   "eval_step": 5,
+   "stopping_step": 10,
+   "embedding_size": 64,
+   "reg_weights": [
+    0.01,
+    0.01
+   ],
+   "train_neg_sample_args": {
+    "distribution": "uniform",
+    "sample_num": 1,
+    "alpha": 1.0,
+    "dynamic": false,
+    "candidate_num": 0
+   }
+  },
+  "best_valid_score": 0.2283,
+  "best_valid": {
+   "recall@10": 0.1152,
+   "mrr@10": 0.2283,
+   "ndcg@10": 0.1213,
+   "hit@10": 0.5493,
+   "precision@10": 0.0903
+  },
+  "recbole_test": {
+   "recall@10": 0.1258,
+   "mrr@10": 0.2646,
+   "ndcg@10": 0.1417,
+   "hit@10": 0.5758,
+   "precision@10": 0.1056
+  },
+  "runtime_s": 252.6,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/FISM/ml-100k-FISM-Oct-13-2026_11-03-10.pth"
+ },
+ {
+  "run_id": "SLIMElastic",
+  "model_key": "SLIMElastic",
+  "model": "SLIMElastic",
+  "family": "Linear item-item",
+  "params": {
+   "epochs": 20,
+   "train_batch_size": 2048,
+   "learner": "adam",
+   "learning_rate": 0.001,
+   "eval_step": 10,
+   "stopping_step": 20,
+   "alpha": 0.2,
+   "l1_ratio": 0.02,
+   "positive_only": true,
+   "hide_item": true
+  },
+  "best_valid_score": 0.4214,
+  "best_valid": {
+   "recall@10": 0.2361,
+   "mrr@10": 0.4214,
+   "ndcg@10": 0.2553,
+   "hit@10": 0.7731,
+   "precision@10": 0.1743
+  },
+  "recbole_test": {
+   "recall@10": 0.275,
+   "mrr@10": 0.5231,
+   "ndcg@10": 0.3235,
+   "hit@10": 0.8123,
+   "precision@10": 0.2164
+  },
+  "runtime_s": 18.8,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/SLIMElastic/ml-100k-SLIMElastic-Oct-13-2026_11-03-25.pth"
+ },
+ {
+  "run_id": "EASE",
+  "model_key": "EASE",
+  "model": "EASE",
+  "family": "Linear autoencoder",
+  "params": {
+   "epochs": 20,
+   "train_batch_size": 2048,
+   "learner": "adam",
+   "learning_rate": 0.001,
+   "eval_step": 10,
+   "stopping_step": 20,
+   "reg_weight": 250.0
+  },
+  "best_valid_score": 0.4201,
+  "best_valid": {
+   "recall@10": 0.2389,
+   "mrr@10": 0.4201,
+   "ndcg@10": 0.2563,
+   "hit@10": 0.7847,
+   "precision@10": 0.1755
+  },
+  "recbole_test": {
+   "recall@10": 0.2805,
+   "mrr@10": 0.5277,
+   "ndcg@10": 0.3295,
+   "hit@10": 0.8197,
+   "precision@10": 0.2206
+  },
+  "runtime_s": 2.5,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/EASE/ml-100k-EASE-Oct-13-2026_11-03-12.pth"
+ },
+ {
+  "run_id": "NeuMF",
+  "model_key": "NeuMF",
+  "model": "NeuMF",
+  "family": "Deep",
+  "params": {
+   "epochs": 20,
+   "train_batch_size": 2048,
+   "learner": "adam",
+   "learning_rate": 0.001,
+   "eval_step": 10,
+   "stopping_step": 20,
+   "mf_embedding_size": 64,
+   "mlp_embedding_size": 64,
+   "mlp_hidden_size": [
+    128,
+    64
+   ],
+   "dropout_prob": 0.1,
+   "mf_train": true,
+   "mlp_train": true
+  },
+  "best_valid_score": 0.3593,
+  "best_valid": {
+   "recall@10": 0.2048,
+   "mrr@10": 0.3593,
+   "ndcg@10": 0.2144,
+   "hit@10": 0.7413,
+   "precision@10": 0.1516
+  },
+  "recbole_test": {
+   "recall@10": 0.2308,
+   "mrr@10": 0.4458,
+   "ndcg@10": 0.2674,
+   "hit@10": 0.7741,
+   "precision@10": 0.1849
+  },
+  "runtime_s": 28.8,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/NeuMF/ml-100k-NeuMF-Oct-13-2026_11-03-14.pth"
+ },
+ {
+  "run_id": "NGCF",
+  "model_key": "NGCF",
+  "model": "NGCF",
+  "family": "Graph",
+  "params": {
+   "epochs": 20,
+   "train_batch_size": 2048,
+   "learner": "adam",
+   "learning_rate": 0.001,
+   "eval_step": 10,
+   "stopping_step": 20,
+   "embedding_size": 64,
+   "hidden_size_list": [
+    64,
+    64,
+    64
+   ],
+   "node_dropout": 0.0,
+   "message_dropout": 0.1,
+   "reg_weight": 1e-05
+  },
+  "best_valid_score": 0.2677,
+  "best_valid": {
+   "recall@10": 0.1378,
+   "mrr@10": 0.2677,
+   "ndcg@10": 0.1519,
+   "hit@10": 0.6045,
+   "precision@10": 0.1168
+  },
+  "recbole_test": {
+   "recall@10": 0.153,
+   "mrr@10": 0.3131,
+   "ndcg@10": 0.1832,
+   "hit@10": 0.6384,
+   "precision@10": 0.1406
+  },
+  "runtime_s": 75.6,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/NGCF/ml-100k-NGCF-Oct-13-2026_11-03-32.pth"
+ },
+ {
+  "run_id": "LightGCN",
+  "model_key": "LightGCN",
+  "model": "LightGCN",
+  "family": "Graph",
+  "params": {
+   "epochs": 20,
+   "train_batch_size": 4096,
+   "learner": "adam",
+   "learning_rate": 0.001,
+   "eval_step": 10,
+   "stopping_step": 10,
+   "embedding_size": 64,
+   "n_layers": 3,
+   "reg_weight": 0.0001,
+   "require_pow": false
+  },
+  "best_valid_score": 0.2572,
+  "best_valid": {
+   "recall@10": 0.1258,
+   "mrr@10": 0.2572,
+   "ndcg@10": 0.1363,
+   "hit@10": 0.5726,
+   "precision@10": 0.0943
+  },
+  "recbole_test": {
+   "recall@10": 0.1388,
+   "mrr@10": 0.2963,
+   "ndcg@10": 0.1586,
+   "hit@10": 0.6098,
+   "precision@10": 0.1104
+  },
+  "runtime_s": 38.2,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/LightGCN/ml-100k-LightGCN-Oct-13-2026_11-03-46.pth"
+ },
+ {
+  "run_id": "Pop",
+  "model_key": "Pop",
+  "model": "Pop",
+  "family": "Naive baseline",
+  "params": {
+   "epochs": 1,
+   "eval_step": 1,
+   "stopping_step": 1
+  },
+  "best_valid_score": 0.1846,
+  "best_valid": {
+   "recall@10": 0.0836,
+   "mrr@10": 0.1846,
+   "ndcg@10": 0.0946,
+   "hit@10": 0.4634,
+   "precision@10": 0.0754
+  },
+  "recbole_test": {
+   "recall@10": 0.0838,
+   "mrr@10": 0.1896,
+   "ndcg@10": 0.1005,
+   "hit@10": 0.4708,
+   "precision@10": 0.0824
+  },
+  "runtime_s": 2.2,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/Pop/ml-100k-Pop-Oct-13-2026_11-04-21.pth"
+ },
+ {
+  "run_id": "Random",
+  "model_key": "Random",
+  "model": "Random",
+  "family": "Naive baseline",
+  "params": {
+   "epochs": 1,
+   "eval_step": 1,
+   "stopping_step": 1
+  },
+  "best_valid_score": 0.0233,
+  "best_valid": {
+   "recall@10": 0.0074,
+   "mrr@10": 0.0233,
+   "ndcg@10": 0.0094,
+   "hit@10": 0.0679,
+   "precision@10": 0.0072
+  },
+  "recbole_test": {
+   "recall@10": 0.0061,
+   "mrr@10": 0.0157,
+   "ndcg@10": 0.0068,
+   "hit@10": 0.0541,
+   "precision@10": 0.0058
+  },
+  "runtime_s": 2.0,
+  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/Random/ml-100k-Random-Oct-13-2026_11-04-23.pth"
+ }
+]
