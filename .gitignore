@@ -1,0 +1,23 @@
+# --- environment / dependencies ---
+.venv/
+__pycache__/
+*.pyc
+.python-version
+
+# --- the RecBole course fork (cloned separately, not vendored) ---
+RecBole_DSAIT4335/
+
+# --- large regenerable artefacts (kept out of history) ---
+# 640M of RecBole .pth checkpoints — regenerable by re-running Task1
+runs/checkpoints/
+# stray RecBole checkpoints
+saved/
+log_tensorboard/
+runs/.mplconfig/
+
+# --- scratch / dev helpers (logic lives in the notebooks) ---
+_dev_task1_4.py
+_dev_task2_1.py
+_run_task1.py
+runs/_executed_Task1.ipynb
+runs/_run_task1.log
