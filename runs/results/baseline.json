@@ -26,8 +26,8 @@
    "hit@10": 0.7847,
    "precision@10": 0.1931
   },
-  "runtime_s": 5.3,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/ItemKNN-item/ml-100k-ItemKNN-Oct-13-2026_11-03-05.pth"
+  "runtime_s": 9.1,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\ItemKNN-item\\ml-100k-ItemKNN-Oct-19-2026_14-41-32.pth"
  },
  {
   "run_id": "ItemKNN-user",
@@ -56,8 +56,8 @@
    "hit@10": 0.7805,
    "precision@10": 0.1885
   },
-  "runtime_s": 5.1,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/ItemKNN-user/ml-100k-ItemKNN-Oct-13-2026_11-03-05.pth"
+  "runtime_s": 7.8,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\ItemKNN-user\\ml-100k-ItemKNN-Oct-19-2026_14-41-32.pth"
  },
  {
   "run_id": "BPR",
@@ -96,8 +96,8 @@
    "hit@10": 0.7275,
    "precision@10": 0.167
   },
-  "runtime_s": 7.0,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/BPR/ml-100k-BPR-Oct-13-2026_11-03-04.pth"
+  "runtime_s": 17.9,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\BPR\\ml-100k-BPR-Oct-19-2026_14-41-31.pth"
  },
  {
   "run_id": "FISM",
@@ -139,8 +139,8 @@
    "hit@10": 0.5758,
    "precision@10": 0.1056
   },
-  "runtime_s": 252.6,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/FISM/ml-100k-FISM-Oct-13-2026_11-03-10.pth"
+  "runtime_s": 345.2,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\FISM\\ml-100k-FISM-Oct-19-2026_14-41-39.pth"
  },
  {
   "run_id": "SLIMElastic",
@@ -174,8 +174,8 @@
    "hit@10": 0.8123,
    "precision@10": 0.2164
   },
-  "runtime_s": 18.8,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/SLIMElastic/ml-100k-SLIMElastic-Oct-13-2026_11-03-25.pth"
+  "runtime_s": 31.9,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\SLIMElastic\\ml-100k-SLIMElastic-Oct-19-2026_14-42-07.pth"
  },
  {
   "run_id": "EASE",
@@ -206,8 +206,8 @@
    "hit@10": 0.8197,
    "precision@10": 0.2206
   },
-  "runtime_s": 2.5,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/EASE/ml-100k-EASE-Oct-13-2026_11-03-12.pth"
+  "runtime_s": 3.5,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\EASE\\ml-100k-EASE-Oct-19-2026_14-41-49.pth"
  },
  {
   "run_id": "NeuMF",
@@ -231,23 +231,23 @@
    "mf_train": true,
    "mlp_train": true
   },
-  "best_valid_score": 0.3593,
+  "best_valid_score": 0.3623,
   "best_valid": {
-   "recall@10": 0.2048,
-   "mrr@10": 0.3593,
-   "ndcg@10": 0.2144,
-   "hit@10": 0.7413,
-   "precision@10": 0.1516
+   "recall@10": 0.2043,
+   "mrr@10": 0.3623,
+   "ndcg@10": 0.215,
+   "hit@10": 0.7423,
+   "precision@10": 0.1511
   },
   "recbole_test": {
-   "recall@10": 0.2308,
-   "mrr@10": 0.4458,
-   "ndcg@10": 0.2674,
-   "hit@10": 0.7741,
-   "precision@10": 0.1849
+   "recall@10": 0.2282,
+   "mrr@10": 0.4523,
+   "ndcg@10": 0.2687,
+   "hit@10": 0.7709,
+   "precision@10": 0.1847
   },
-  "runtime_s": 28.8,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/NeuMF/ml-100k-NeuMF-Oct-13-2026_11-03-14.pth"
+  "runtime_s": 118.8,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\NeuMF\\ml-100k-NeuMF-Oct-19-2026_14-41-53.pth"
  },
  {
   "run_id": "NGCF",
@@ -271,23 +271,23 @@
    "message_dropout": 0.1,
    "reg_weight": 1e-05
   },
-  "best_valid_score": 0.2677,
+  "best_valid_score": 0.2678,
   "best_valid": {
-   "recall@10": 0.1378,
-   "mrr@10": 0.2677,
+   "recall@10": 0.1374,
+   "mrr@10": 0.2678,
    "ndcg@10": 0.1519,
-   "hit@10": 0.6045,
+   "hit@10": 0.6034,
    "precision@10": 0.1168
   },
   "recbole_test": {
-   "recall@10": 0.153,
-   "mrr@10": 0.3131,
-   "ndcg@10": 0.1832,
-   "hit@10": 0.6384,
-   "precision@10": 0.1406
+   "recall@10": 0.155,
+   "mrr@10": 0.3156,
+   "ndcg@10": 0.1848,
+   "hit@10": 0.6405,
+   "precision@10": 0.1409
   },
-  "runtime_s": 75.6,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/NGCF/ml-100k-NGCF-Oct-13-2026_11-03-32.pth"
+  "runtime_s": 309.3,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\NGCF\\ml-100k-NGCF-Oct-19-2026_14-42-17.pth"
  },
  {
   "run_id": "LightGCN",
@@ -321,8 +321,8 @@
    "hit@10": 0.6098,
    "precision@10": 0.1104
   },
-  "runtime_s": 38.2,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/LightGCN/ml-100k-LightGCN-Oct-13-2026_11-03-46.pth"
+  "runtime_s": 150.6,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\LightGCN\\ml-100k-LightGCN-Oct-19-2026_14-43-55.pth"
  },
  {
   "run_id": "Pop",
@@ -349,8 +349,8 @@
    "hit@10": 0.4708,
    "precision@10": 0.0824
   },
-  "runtime_s": 2.2,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/Pop/ml-100k-Pop-Oct-13-2026_11-04-21.pth"
+  "runtime_s": 3.5,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\Pop\\ml-100k-Pop-Oct-19-2026_14-46-23.pth"
  },
  {
   "run_id": "Random",
@@ -377,7 +377,7 @@
    "hit@10": 0.0541,
    "precision@10": 0.0058
   },
-  "runtime_s": 2.0,
-  "checkpoint": "/home/andreipaduraru/Desktop/4335RecommenderSystems/Project/runs/checkpoints/Random/ml-100k-Random-Oct-13-2026_11-04-23.pth"
+  "runtime_s": 3.0,
+  "checkpoint": "C:\\Users\\Sanjay Sathish\\Desktop\\TU Delft\\Q5\\Recommender Systems\\Project\\RecommenderSystems\\runs\\checkpoints\\Random\\ml-100k-Random-Oct-19-2026_14-46-25.pth"
  }
 ]
